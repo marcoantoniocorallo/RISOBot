@@ -10,6 +10,6 @@ You can install these modules through
 
 `pip install pytelegrambotapi`
 
-The bot is hosted on [PythonAnywhere](pythonanywhere.com) and is available as [@AdrianosDietsConsultingBot](https://t.me/AdrianosDietsConsultingBot) (unfortunately RisoBot was already taken :disappointed:).
+The bot is hosted on [PythonAnywhere](https://www.pythonanywhere.com/) and is available at [*@AdrianosDietsConsultingBot*](https://t.me/AdrianosDietsConsultingBot) (unfortunately *@RisoBot* was already taken :disappointed:).
 
-The botpic is a mash-up of two [Freepik](https://www.flaticon.com/authors/freepik)'s icons, available on [Flaticon](https://www.flaticon.com/free-icons/)
+The botpic is a mash-up of two [Freepik](https://www.flaticon.com/authors/freepik)'s icons, available on [Flaticon](https://www.flaticon.com/)
