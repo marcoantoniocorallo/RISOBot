@@ -32,14 +32,14 @@ def lookupForAlternatives(user : UserSession, food : str):
 def pagePlan(path : str):
     with pdf.open(path) as file:
         for page in file.pages:
-            if kwPlan in page.extract_text():
+            if KW_PLAN in page.extract_text():
                 return file.pages.index(page)
 
 # find the start page for the alternatives
 def pageAlternatives(path : str):
     with pdf.open(path) as file:
         for page in file.pages:
-            if kwAlternatives in page.extract_text():
+            if KW_ALTERNATIVES in page.extract_text():
                 return file.pages.index(page)
 
 # check file format correctness
@@ -49,7 +49,7 @@ def checkCorrectness(path : str):
 # load data from JSON DB
 def load():
     try:
-        with open(DBPath,'r') as file:
+        with open(DB_PATH,'r') as file:
             users = json.load(file)
             return { int(userid) : UserSession( *(json.loads(users[userid])).values() ) for userid in users }
     except FileNotFoundError:
@@ -57,5 +57,5 @@ def load():
 
 # store data to JSON DB
 def store(users : dict):
-    with open(DBPath,'w') as file:
+    with open(DB_PATH,'w') as file:
         json.dump({user:users[user].toJSON() for user in users.keys()},file)
