@@ -1,9 +1,11 @@
 # RISO Bot
 *Ad**R**iano's d**I**et**S** c**O**nsulting **Bot***
-####Parses and extracts informations about your diet (files in the Adriano's format).
+
+#### Parses and extracts informations about your diet (files in the Adriano's format).
 
 This Telegram Bot uses [PyTelegramBotApi](https://github.com/eternnoir/pyTelegramBotAPI) and [PDFPlumber](https://github.com/jsvine/pdfplumber) modules. 
-You can install these modules through 
+You can install these modules through
+
 `pip install pdfplumber`
 
 `pip install pytelegrambotapi`
